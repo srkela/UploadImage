@@ -10,6 +10,7 @@
     "lint": "eslint app *.js",
     "prettier:format": "prettier --trailing-comma --write \"app/**/*.js\"",
     "prettier:hook": "pretty-quick --staged",
+    "pre:commit": "yarn prettier:hook && yarn lint"
   },
   "dependencies": {
     "react": "17.0.1",
@@ -27,7 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "jest": "^27.0.6",
+    "jest": "^26.6.3",
     "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
