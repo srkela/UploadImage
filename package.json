@@ -1,5 +1,5 @@
 {
-  "name": "UploadImageclear",
+  "name": "UploadImage",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint app *.js",
+    "prettier:format": "prettier --trailing-comma --write \"app/**/*.js\"",
+    "prettier:hook": "pretty-quick --staged",
   },
   "dependencies": {
     "react": "17.0.1",
@@ -18,8 +20,17 @@
     "@babel/runtime": "^7.15.3",
     "@react-native-community/eslint-config": "^3.0.0",
     "babel-jest": "^27.0.6",
-    "eslint": "^7.32.0",
+    "eslint": "^6.6.0",
+    "eslint-config-equimper": "^2.2.2",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
     "jest": "^27.0.6",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.1"
   },

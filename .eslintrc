@@ -1,0 +1,11 @@
+{
+  "extends": ["equimper", "prettier/react", "prettier"],
+  "rules": {
+    "default-case": 0,
+    "no-console": 2,
+    "no-constant-condition": 0,
+    "react/no-array-index-key": 0,
+    "react/sort-comp": 0,
+    "arrow-body-style": 0
+  }
+}
