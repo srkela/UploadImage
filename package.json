@@ -20,6 +20,9 @@
     "@babel/core": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "@react-native-community/eslint-config": "^3.0.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/jest-native": "^4.0.2",
+    "@testing-library/react-native": "^7.2.0",
     "babel-jest": "^27.0.6",
     "eslint": "^6.6.0",
     "eslint-config-equimper": "^2.2.2",
@@ -29,13 +32,16 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
     "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   }
 }
