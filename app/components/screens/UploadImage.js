@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import ImagePicker from "react-native-image-crop-picker";
+import * as appActions from "../../redux/actions";
 
 const UploadImage = () => {
   const [image, setImage] = useState(null);
+  const dispatch = useDispatch();
 
   const pickImage = async () => {
     try {
@@ -31,7 +34,11 @@ const UploadImage = () => {
             source={{ uri: image.path }}
             style={{ height: 200, width: 150, backgroundColor: "gray", marginTop: 20 }}
           />
-          <TouchableOpacity onPress={() => {}}>
+          <TouchableOpacity
+            onPress={() => {
+              dispatch(appActions.uploadImage(image));
+            }}
+          >
             <Text style={styles.button}>Upload Image</Text>
           </TouchableOpacity>
         </>
