@@ -17,6 +17,9 @@
     "react-native": "0.64.2",
     "react-native-image-crop-picker": "^0.36.2",
     "react-native-permissions": "^3.0.5",
+    "redux": "^4.0.4",
+    "react-redux": "^7.2.4",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -38,7 +41,8 @@
     "pre-commit": "^1.2.2",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "17.0.1",
+    "remote-redux-devtools": "^0.5.16"
   },
   "jest": {
     "preset": "react-native",
